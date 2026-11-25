@@ -10,9 +10,12 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname } from "node:path";
 
-// DRAFT (rev 1) — replaced by the tournament winner in rev 2.
+// Rev 2 — tournament winner (L12): 4.5 pts, 6 wins / 6 games in the
+// head-to-head proxy-judge tournament over 24 drafted candidates
+// (Swiss 3 rounds over a 12-line shortlist, top-4 round-robin final;
+// see CANDIDATES.md + tournament_swiss.json in the work log).
 const LINE =
-  "My alarm clock rang at 6 AM on a Saturday — even the sun was still asleep, but this little snitch clocked in.";
+  "My alarm clock rang at 6 AM on a Saturday like a gym bro yelling 'no rest days' at a man in a coma.";
 
 const outPath = "/output/entry.txt";
 mkdirSync(dirname(outPath), { recursive: true });
